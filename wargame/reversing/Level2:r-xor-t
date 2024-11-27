@@ -1,0 +1,18 @@
+## https://dreamhack.io/wargame/challenges/901
+
+encoded_str = "C@qpl==Bppl@<=pG<>@l>@Blsp<@l@AArqmGr=B@A>q@@B=GEsmC@ArBmAGlA=@q"
+
+decoded_str = ""
+
+for i in range(len(encoded_str)):
+    decoded_str += chr(ord(encoded_str[i]) ^ 3)
+
+# print(decoded_str)
+decoded_str = decoded_str[::-1]
+
+decoded_str = list(decoded_str)
+# print(''.join(decoded_str))
+for i in range(len(decoded_str)):
+    decoded_str[i] = chr(ord(decoded_str[i]) - 13)
+    
+print(''.join(decoded_str))
