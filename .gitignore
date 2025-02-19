@@ -1,0 +1,17 @@
+# 로그 파일 제외
+*.log
+
+# 특정 폴더 제외
+node_modules/
+venv/
+__pycache__/
+
+# 특정 파일 제외
+config.json
+.env
+
+# 모든 .tmp 확장자 파일 제외
+*.tmp
+
+.gitignor
+.gdb_history
